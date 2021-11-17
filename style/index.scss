@@ -1,0 +1,241 @@
+@import "main";
+
+*{
+  user-select: none;
+}
+img {
+  width: 100%;
+}
+
+p {
+  span {
+    color: $main;
+    font-weight: bold;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  margin: 120px 0 60px;
+  font-weight: bold;
+}
+
+header {
+  height: 75px;
+  background-color: $main;
+  border-bottom: 15px solid $secondary;
+}
+
+.hero {
+  margin-top: 36px;
+  .flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .right {
+    padding-left: 24px;
+    padding-top: 100px;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 24px;
+    color: $b2;
+  }
+}
+
+.features {
+  margin-top: 80px;
+  p {
+    color: $b2;
+    font-size: 24px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .steps {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 12px;
+    img {
+      width: 100%;
+    }
+    p {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 18px;
+      color: $b2;
+    }
+  }
+}
+
+.services {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  .card {
+    position: relative;
+    background-color: #fff;
+    width: 30%;
+    max-width: 350px;
+    border: 2px solid $w2;
+    padding: 20px;
+    min-height: 500px;
+    .top {
+      width: 50%;
+      margin: 36px auto;
+    }
+    p.sub {
+      font-size: 16px;
+      color: $b2;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: 24px;
+      margin: 12px 0 16px;
+      font-weight: bold;
+      span {
+        color: $secondary;
+      }
+    }
+    p.info {
+      font-size: 18px;
+      color: $b2;
+      line-height: 1.5;
+    }
+  }
+
+  .card:first-of-type h3 span {
+    color: $main;
+  }
+
+  .card::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-width: 350px;
+    min-height: 500px;
+    background-color: $w2;
+    top: 8px;
+    left: 8px;
+    z-index: -1;
+  }
+}
+
+.founders {
+  display: flex;
+  justify-content: space-between;
+
+  .card {
+    position: relative;
+    width: 18%;
+    text-align: center;
+    text-transform: uppercase;
+
+    .top {
+      position: relative;
+    }
+
+    .top::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: $w2;
+      top: 8px;
+      left: 8px;
+      z-index: -1;
+      border-radius: 100%;
+    }
+
+    &:nth-of-type(2) .top::after {
+      top: -8px;
+      left: 8px;
+    }
+    &:nth-of-type(3) .top::after {
+      top: -8px;
+      left: -8px;
+    }
+    &:nth-of-type(4) .top::after {
+      top: 8px;
+      left: -8px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin: 24px 0 16px;
+      font-weight: bold;
+      color: $b1;
+      font-style: italic;
+      letter-spacing: 0.05rem;
+    }
+    p {
+      font-size: 18px;
+      color: $b2;
+      letter-spacing: 0.11rem;
+    }
+  }
+}
+
+.launching {
+  .form {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    input {
+      height: 48px;
+      width: 100%;
+      margin-right: 30px;
+      font-size: 16px;
+      padding-left: 12px;
+    }
+    button {
+      background-color: $main;
+      color: $w0;
+      border: none;
+      outline: none;
+      width: 200px;
+      font-size: 16px;
+      border-radius: 8px;
+      transition: 0.2s;
+      font-weight: bold;
+      letter-spacing: 0.12rem;
+      cursor: pointer;
+      &:hover {
+        background-color: #682020;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 250px;
+  height: 450px;
+  background-color: $main;
+
+  .logo {
+    margin-top: 24px;
+    width: 200px;
+  }
+}

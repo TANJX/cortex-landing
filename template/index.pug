@@ -1,0 +1,106 @@
+extends _main
+
+block styles
+  link(rel='stylesheet' href='style/index.css')
+block scripts_after
+  script(src="script/index.js") 
+block body
+  header
+  .hero 
+    .container
+      .flex 
+        div
+          img(src="img/logo.png")
+        .right
+          h1 emotions, quantified
+          p
+            span.brand Cortex
+            | 
+            | aims to use EEG headsets to gain tangible readings about a user’s 
+            span.brand emotional state 
+            |
+            | in order to help businesses better understand the people using their products.
+
+  .container.features
+    h2 EEG x User Testing
+    p 
+      span.brand EEG User
+      |
+      | Testing allowing nuanced tracking of a subject’s emotions, providing greater detail and accuracy over traditional survey/sentiment analysis methods.
+    .steps
+      .step
+        img(src="img/f-1.png")
+        p App for Testing
+      .step
+        img(src="img/f-2.png")
+        p EEG Headset
+      .step
+        img(src="img/f-3.png")
+        p Brainwave Activity
+      .step
+        img(src="img/f-4.png")
+        p Tracking Metrics
+  
+  .container
+    h2 Services
+    .services
+      .card
+        .top
+          img(src="img/s-1.png")
+        p.sub PLAN 1
+        h3 
+          span Full Service 
+        p.info Traditional survey tests, plus EEG data, for complete testing experience.
+      .card
+        .top
+          img(src="img/s-2.png")
+        p.sub PLAN 2
+        h3 
+          span survey
+          |
+          | tests
+        p.info Independent testing provider, using our own testers and equipment, with different packages.
+      .card
+        .top
+          img(src="img/s-3.png")
+        p.sub PLAN 3
+        h3 
+          span EEG
+          |
+          | Tests
+        p.info Only EEG analysis, for companies who already do traditional user testing elsewhere.
+    
+  .container 
+    h2 Founders
+    .founders 
+      .card
+        .top
+          img(src="img/marshall.png")
+        h3 Marshall
+        p HARDWARE developer
+      .card
+        .top
+          img(src="img/mark.png")
+        h3 Mark
+        p External relations
+      .card
+        .top
+          img(src="img/mars.png")
+        h3 Mars
+        p SOFTWARE DEVELOPER
+      .card
+        .top
+          img(src="img/alex.png")
+        h3 Marshall
+        p designer
+    
+  .container.launching
+    h2 Launching Next Spring
+    .form
+      input(type="text" placeholder="Email Address")
+      button(onclick="submit()") SIGN UP
+  
+  footer
+    .container 
+      .logo
+        img(src="img/logo-small.png")
